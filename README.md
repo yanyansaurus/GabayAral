@@ -2,11 +2,20 @@
 
 GabayAral is a Next.js web application built with React and Tailwind CSS. It integrates Google's Generative AI (Gemini) to provide AI-powered tutoring and educational features.
 
+**Why we built this:** We chose the number 2 ACCENTURE problem because as students, we wanted to provide a solution for creating a systematic, recreational, and innovative study buddy application.
+
+## Hackathon Team: Kilabot
+- **Team Representative:** Adriane Peña
+- **Members:** Joseph Cabuhat, Raineer Cura, and Brent Verdera
+
 ## Tech Stack
 
 - **Framework:** [Next.js 16](https://nextjs.org/)
 - **UI/Styling:** React 19, Tailwind CSS v4, Lucide React, Recharts
-- **AI Integration:** `@google/generative-ai` (Gemini 1.5 Flash)
+- **AI Integration & APIs:**
+  - **SDK:** `@google/generative-ai`
+  - **Model:** Google Gemini 2.5 Flash (`gemini-2.5-flash`)
+  - **API:** Google Gemini API
 
 ## Getting Started
 
