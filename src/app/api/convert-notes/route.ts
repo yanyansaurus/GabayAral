@@ -10,7 +10,7 @@ export async function POST(req: NextRequest) {
     }
 
     const genAI = getGeminiClient();
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
     const prompt = `
 You are an educational content converter. A ${educationLevel || "SHS"} Filipino student has written the following notes about "${noteTitle || "a lesson"}".

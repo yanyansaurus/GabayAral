@@ -13,17 +13,22 @@ export async function POST(req: NextRequest) {
     const genAI = getGeminiClient();
 
     const model = genAI.getGenerativeModel({
-      model: "gemini-1.5-flash",
+      model: "gemini-2.5-flash",
       systemInstruction: GABAY_SYSTEM_INSTRUCTION(level),
     });
 
     // Build chat history for Gemini
-    const geminiHistory = (history || []).map(
+    let geminiHistory = (history || []).map(
       (msg: { role: string; content: string }) => ({
         role: msg.role === "user" ? "user" : "model",
         parts: [{ text: msg.content }],
       })
     );
+
+    // Gemini API requires the first message in history to be from the 'user'
+    if (geminiHistory.length > 0 && geminiHistory[0].role === "model") {
+      geminiHistory = geminiHistory.slice(1);
+    }
 
     const chat = model.startChat({ history: geminiHistory });
 
