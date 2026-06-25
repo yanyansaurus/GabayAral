@@ -14,7 +14,7 @@ GabayAral is a Next.js web application built with React and Tailwind CSS. It int
 - **UI/Styling:** React 19, Tailwind CSS v4, Lucide React, Recharts
 - **AI Integration & APIs:**
   - **SDK:** `@google/generative-ai`
-  - **Model:** Google Gemini 2.5 Flash (`gemini-2.5-flash`)
+  - **Model:** Google Gemini 2. and 3. Models
   - **API:** Google Gemini API
 
 ## Getting Started
