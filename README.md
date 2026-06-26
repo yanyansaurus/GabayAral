@@ -31,6 +31,7 @@ GabayAral was built with a modern, high-performance tech stack:
 - **Icons & UI:** Lucide React for crisp SVG iconography.
 - **State Management:** React Context API + LocalStorage for seamless offline-capable persistence.
 - **Mathematics Rendering:** `react-markdown` + `rehype-katex` + `remark-math` for beautiful textbook-quality equations.
+- - **AI USED:** `We use anti-gravity ide for this project and use recommendations from gemini ai from google.
 
 ## 🚀 Getting Started
 
