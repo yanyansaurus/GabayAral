@@ -6,14 +6,14 @@ const features = [
     description: "Suporta sa maraming lokal na wika.",
     icon: Mic,
     color: "text-[#6C63FF]",
-    bgColor: "bg-indigo-50",
+    bgColor: "bg-indigo-50 dark:bg-indigo-900/20",
   },
   {
     title: "Gamit kahit mahina ang internet.",
     description: "Dinisenyo para sa bawat komunidad.",
     icon: Wifi,
     color: "text-[#00C2A8]",
-    bgColor: "bg-teal-50",
+    bgColor: "bg-teal-50 dark:bg-teal-900/20",
   },
   {
     title: "Aral na akma sa iyong level.",
@@ -27,14 +27,14 @@ const features = [
     description: "Edukasyon para sa lahat, walang iwanan.",
     icon: Globe, // Using Globe or Heart
     color: "text-rose-500",
-    bgColor: "bg-rose-50",
+    bgColor: "bg-rose-50 dark:bg-rose-900/20",
   },
 ];
 
 export default function AccessibilityFeatures() {
   return (
-    <div className="bg-white rounded-3xl p-6 shadow-[0_4px_24px_rgba(0,0,0,0.02)] border border-gray-50 h-full">
-      <h2 className="text-lg font-bold text-gray-900 mb-6">Para sa Bawat Estudyante</h2>
+    <div className="bg-white dark:bg-[#15171C] rounded-3xl p-6 shadow-[0_4px_24px_rgba(0,0,0,0.02)] border border-gray-50 h-full">
+      <h2 className="text-lg font-bold text-gray-900 dark:text-white mb-6">Para sa Bawat Estudyante</h2>
       
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {features.map((feature, index) => (
@@ -43,8 +43,8 @@ export default function AccessibilityFeatures() {
               <feature.icon className="w-5 h-5" />
             </div>
             <div className="ml-3">
-              <h4 className="text-sm font-bold text-gray-900 leading-tight mb-1">{feature.title}</h4>
-              <p className="text-xs text-gray-500 leading-relaxed">{feature.description}</p>
+              <h4 className="text-sm font-bold text-gray-900 dark:text-white leading-tight mb-1">{feature.title}</h4>
+              <p className="text-xs text-gray-500 dark:text-gray-400 dark:text-gray-500 leading-relaxed">{feature.description}</p>
             </div>
           </div>
         ))}

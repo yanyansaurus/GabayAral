@@ -22,9 +22,9 @@ const data = [
 
 export default function WeeklyProgress() {
   return (
-    <div className="bg-white rounded-3xl p-6 shadow-[0_4px_24px_rgba(0,0,0,0.02)] border border-gray-50 h-full flex flex-col">
+    <div className="bg-white dark:bg-[#15171C] rounded-3xl p-6 shadow-[0_4px_24px_rgba(0,0,0,0.02)] border border-gray-50 h-full flex flex-col">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-lg font-bold text-gray-900">Progress mo ngayong linggo</h2>
+        <h2 className="text-lg font-bold text-gray-900 dark:text-white">Progress mo ngayong linggo</h2>
         <div className="bg-[#6C63FF]/10 text-[#6C63FF] text-xs font-bold px-2 py-1 rounded-lg">
           75% Avg
         </div>

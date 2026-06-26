@@ -1,117 +1,82 @@
-# GabayAral
-
-GabayAral is a modern, interactive, and AI-powered study companion designed specifically for Filipino students. Built for the Accenture Hackathon, GabayAral addresses the challenge of creating a systematic, recreational, and innovative study buddy application. By integrating Google Gemini's advanced generative AI capabilities, it offers adaptive tutoring, automated study material generation, progress tracking, and personalized lesson recommendations.
-
----
-
-## 1. Project Overview
-
-GabayAral (literally "Study Guide") serves as a virtual tutor and organizer that adapts to a student's learning level. Upon launching the application, students are greeted with an onboarding system that tailors the learning experience for:
-*   **Junior High School** (Grades 7–10)
-*   **Senior High School** (Grades 11–12)
-*   **College** (Undergraduate)
-
-Through a sleek, glassmorphic dashboard, students can interact with an AI tutor in real-time, convert unstructured notes into study materials, track their study analytics, and receive customized learning recommendations. The application focuses on making learning engaging, personalized, and structured.
+<div align="center">
+  <img src="public/gabayaral-logo.png" alt="GabayAral Logo" width="120" />
+  <h1>GabayAral</h1>
+  <p><em>Boses Mo. Aral Mo. Kinabukasan Mo.</em></p>
+  <p>A student-first, bilingual AI Study Companion designed specifically for Filipino students.</p>
+</div>
 
 ---
 
-## 2. Features
+## 🌟 Overview
 
-*   **Adaptive AI Tutor (`/tutor`)**
-    *   Powered by the Google Gemini API.
-    *   Provides context-aware tutoring in both English and Filipino.
-    *   Adapts explanations, tone, and examples to the user's selected education level (JHS, SHS, College).
-*   **AI Notes Converter & Study Guide Generator (`/notes`)**
-    *   Converts raw text, study materials, or notes into structured resources.
-    *   Generates study summaries, conceptual mind maps (text-based), flashcards, and quizzes.
-*   **Interactive Learning Dashboard**
-    *   **Learning Stats:** Displays key metrics such as total study hours, notes created, questions asked, and current level progress.
-    *   **Weekly Progress Tracker:** A Recharts-powered interactive chart detailing study hours logged per day.
-    *   **Student Motivation System:** Displays streak rewards, milestone progress, and a progress bar to keep students motivated.
-*   **Personalized Lesson Recommender**
-    *   Dynamically suggests relevant topics based on the student's selected academic level.
-*   **Accessibility & Personalization**
-    *   Built-in text-to-speech, text size adjustment, and display high-contrast options.
-    *   A seamless onboarding flow that saves student preferences locally.
+**GabayAral** is not just another homework solver. It is a highly personalized **Socratic AI Tutor** built to guide students to understand complex concepts on their own. Designed for the Philippine education context, GabayAral bridges the gap for students who lack access to expensive private tutoring by providing a world-class, culturally aware, and bilingual learning experience right on their smartphones.
 
----
+## ✨ Key Features
 
-## 3. Setup Instructions
+- 🧠 **Socratic AI Tutor:** Gabay doesn't give straight answers. It asks clarifying questions and guides students step-by-step through their learning journey.
+- 🇵🇭 **Bilingual Support:** Full support for both Tagalog and English, seamlessly switching based on the student's preference.
+- 🗂️ **AI Flashcard Generator:** Instantly convert saved notes or general topics into high-quality flashcards.
+- ⏱️ **Smart Scheduling (Spaced Repetition):** Integrated SuperMemo-2 (SM-2) algorithm tracks your memory retention and tells you exactly when you need to review specific topics.
+- 🎮 **Gamification System:** Earn Points, maintain Daily Streaks, and climb the Ranks (from *Baguhan* to *Pantas*) to stay motivated.
+- 📱 **Mobile-First PWA:** Designed to feel like a native mobile app, complete with bottom-tab navigation and touch-friendly interfaces.
+- 🌙 **Dark Mode:** A beautiful, sleek dark mode for late-night studying.
 
-Follow these instructions to set up the project locally for development:
+## 🛠️ Technologies Used
+
+GabayAral was built with a modern, high-performance tech stack:
+
+- **Framework:** Next.js 16 (App Router) with React 19
+- **Styling:** Tailwind CSS v4 (with custom CSS variables and Dark Mode)
+- **AI Integration:** Google Gemini 3.5 Flash (via `@google/genai` SDK) for lightning-fast, highly contextual responses.
+- **Icons & UI:** Lucide React for crisp SVG iconography.
+- **State Management:** React Context API + LocalStorage for seamless offline-capable persistence.
+- **Mathematics Rendering:** `react-markdown` + `rehype-katex` + `remark-math` for beautiful textbook-quality equations.
+
+## 🚀 Getting Started
+
+To run GabayAral locally on your machine, follow these steps:
 
 ### Prerequisites
-*   Node.js (v18.x or later recommended)
-*   npm (v9.x or later)
+- Node.js (v18 or higher)
+- npm or yarn
+- A Google Gemini API Key
 
-### 1. Clone and Navigate to the Repository
-```bash
-git clone <repository-url>
-cd GabayAral
-```
+### Installation
 
-### 2. Install Dependencies
-Install all required Node.js modules:
-```bash
-npm install
-```
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yanyansaurus/GabayAral.git
+   cd GabayAral
+   ```
 
-### 3. Configure Environment Variables
-Create a `.env` file in the root directory and add your Google Gemini API key:
-```env
-GEMINI_API_KEY=your_gemini_api_key_here
-```
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-### 4. Run the Development Server
-Start the Next.js development server:
-```bash
-npm run dev
-```
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
+3. **Set up environment variables**
+   Create a `.env` file in the root directory and add your Gemini API Key:
+   ```env
+   GEMINI_API_KEY=your_api_key_here
+   ```
 
-### 5. Linting and Building
-*   To check code style and linting issues:
-    ```bash
-    npm run lint
-    ```
-*   To build the application for production:
-    ```bash
-    npm run build
-    ```
-*   To run the production build locally:
-    ```bash
-    npm run start
-    ```
+4. **Run the development server**
+   ```bash
+   npm run dev
+   ```
+
+5. **Open the app**
+   Navigate to [http://localhost:3000](http://localhost:3000) in your browser. (For the best experience, emulate a mobile device using Chrome DevTools).
+
+## 👥 The Team
+
+GabayAral was built with ❤️ during the TechSprint Hackathon by:
+
+- **Adriane Nathaniel Peña (yanyansaurus)** — Full Stack Developer & AI Integration
+- **Raineer Cura** — Team Member
+- **Brent Verdera** — Team Member
+- **Joseph Cabuhat** — Team Member
 
 ---
 
-## 4. Technologies Used
-
-*   **Frontend Framework:** [Next.js 16 (App Router)](https://nextjs.org/)
-*   **UI Library:** React 19
-*   **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
-*   **Icons:** [Lucide React](https://lucide.dev/)
-*   **Data Visualization:** [Recharts](https://recharts.org/)
-*   **AI Engine:** Google Gemini API (via `@google/generative-ai` SDK)
-
----
-
-## 5. Team Members and Rules
-
-### The Team: Kilabot
-*   **Team Representative:** Adriane Peña
-*   **Members:** Joseph Cabuhat, Raineer Cura, Brent Verdera
-
-### Team Rules and Git Workflow
-To ensure smooth collaboration during the hackathon, the team adheres to the following rules:
-
-1.  **Branch Naming Conventions**
-    *   Feature branches must be created from `main`.
-    *   Branch names should use snake_case or kebab-case describing the feature (e.g., `login_functions`, `notes-converter-ui`).
-2.  **Commit Messages**
-    *   Write clear, imperative commit messages (e.g., `feat: add onboarding modal level selection` or `fix: resolve gemini api endpoint issue`).
-3.  **Code Consistency**
-    *   Verify lint rules before committing (`npm run lint`).
-    *   Do not leave debugging logs (`console.log`) in production code.
-4.  **Local Testing**
-    *   Always verify that the application compiles and runs locally (`npm run dev`) before pushing changes to the remote repository.
+*Made to empower the next generation of Filipino learners.*

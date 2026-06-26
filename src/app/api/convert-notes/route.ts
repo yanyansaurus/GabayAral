@@ -1,4 +1,4 @@
-import { getGeminiClient } from "@/lib/gemini";
+import { getGeminiClient, GEMINI_MODEL } from "@/lib/gemini";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
@@ -10,7 +10,7 @@ export async function POST(req: NextRequest) {
     }
 
     const genAI = getGeminiClient();
-    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
+    const model = genAI.getGenerativeModel({ model: GEMINI_MODEL });
 
     const prompt = `
 You are an educational content converter. A ${educationLevel || "SHS"} Filipino student has written the following notes about "${noteTitle || "a lesson"}".
