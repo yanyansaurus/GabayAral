@@ -1,6 +1,6 @@
 <div align="center">
   <img src="public/gabayaral-logo.png" alt="GabayAral Logo" width="120" />
-  <h1>GabayAral</h1>
+  <h1>GabayAral https://gabay-aral.vercel.app/</h1>
   <p><em>Boses Mo. Aral Mo. Kinabukasan Mo.</em></p>
   <p>A student-first, bilingual AI Study Companion designed specifically for Filipino students.</p>
 </div>
